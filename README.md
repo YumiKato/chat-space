@@ -12,7 +12,7 @@
 - belongs_to :user
 
 
-## tweetsテーブル
+## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -39,7 +39,7 @@ belongs_to :group
  - has_many :group_users
 
 
-## group テーブル
+## groups テーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
