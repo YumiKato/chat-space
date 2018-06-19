@@ -39,8 +39,8 @@
  ## group_users テーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false|
-|user_id|integer|null: false, foreign_key: true|
+|group_id|references|null: false|
+|user_id|references|null: false, foreign_key: true|
 
 - belongs_to :user
 - belongs_to :group
