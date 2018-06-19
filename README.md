@@ -16,13 +16,13 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|text|text|-------|
 |image|text|-------|
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
-belongs_to :user
-belongs_to :group
+- belongs_to :user
+- belongs_to :group
 
 
 
@@ -46,9 +46,19 @@ belongs_to :group
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
-has_many :members
+ - has_many :members
  - has_many :users, through: :group_users
  - has_many :group_users
+ 
+ 
+ ## group_users テーブル
+|Column|Type|Options|
+|------|----|-------|
+|group_id|integer|null: false|
+|user_id|integer|null: false, foreign_key: true|
+
+- belongs_to :user
+- belongs_to :group
 
 
 
