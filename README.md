@@ -21,7 +21,6 @@
 |email|text|null: false|
 
 ### Association
- - has_many :member
  - has_many :messages
  - has_many :groups, through: :group_users
  - has_many :group_users
@@ -33,7 +32,6 @@
 |name|string|null: false|
 
 ### Association
- - has_many :members
  - has_many :users, through: :group_users
  - has_many :group_users
  - has_many :messages
