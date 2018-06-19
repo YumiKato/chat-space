@@ -34,7 +34,7 @@
 
 ### Association
  - has_many :member
- - has_many :tweets
+ - has_many :messages
  - has_many :groups, through: :group_users
  - has_many :group_users
 
@@ -48,7 +48,7 @@
  - has_many :members
  - has_many :users, through: :group_users
  - has_many :group_users
- 
+ - has_many :messages
  
  ## group_users テーブル
 |Column|Type|Options|
